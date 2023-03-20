@@ -1,0 +1,12 @@
+.wrapper {
+  width: 1000px;
+  min-height: 100vh;
+  margin: auto;
+  display: flex;
+}
+#editor, #preview {
+  flex: 50%
+}
+#preview {
+  border: 1px solid grey;
+}
