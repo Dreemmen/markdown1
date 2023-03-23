@@ -1,17 +1,25 @@
-import { makeObservable, observable, action } from "mobx"
+import { makeObservable, observable, action, computed, autorun } from "mobx"
 
 class MarkdownStore {
     rawData = ''
-    parsedData = ''
+    outputRawLine = false
 
     constructor(){
         makeObservable(this, {
             rawData: observable,
-            rawDataChage: action
+            outputRawLine: true,
+            getData: true,
+            rawDataChange: action,
+        })
+        autorun(() => {
+            //console.log(this.rawData)
         })
     }
-    rawDataChage(value){
+    rawDataChange(value){
         this.rawData = value
+    }
+    get getData(){
+        return this.rawData
     }
 }
 export default new MarkdownStore()
