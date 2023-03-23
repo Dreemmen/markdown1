@@ -64,7 +64,7 @@ And here. | Okay. | I think we get it.
       <div id={"preview"}>
         <Markdown store={markdownStore} />
       </div>
-      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" crossorigin="anonymous"></script>
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </div>
   );
 }
