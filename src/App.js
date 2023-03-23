@@ -3,6 +3,7 @@ import './App.css';
 import Markdown from './components/Markdown'
 import markdownStore from './components/markdownStore';
 import { observer } from 'mobx-react';
+import * as testable from "./helpers/testable"
 
 function App() {
   const sample_text = `# Welcome to my React Markdown Previewer!
